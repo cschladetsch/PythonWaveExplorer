@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Set project directory
+PROJECT_DIR="$HOME/local/wave-explorer"
+REPO_URL="https://github.com/cschladetsch/PythonWaveExplorer.git"
+BRANCH="main"
+
+# Navigate to project directory
+cd "$PROJECT_DIR" || { echo "Directory not found: $PROJECT_DIR"; exit 1; }
+
+# Initialize Git (if not already initialized)
+if [ ! -d .git ]; then
+    git init
+    git remote add origin "$REPO_URL"
+fi
+
+# Add all changes
+git add .
+
+# Commit with a timestamp message
+git commit -m "Auto commit: $(date '+%Y-%m-%d %H:%M:%S')"
+
+# Set main branch
+git branch -M "$BRANCH"
+
+# Push to GitHub
+git push -u origin "$BRANCH"
+
+# Success message
+echo "Code pushed to GitHub: $REPO_URL on branch $BRANCH"
