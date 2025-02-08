@@ -11,7 +11,7 @@ The **Fibonacci Wave Explorer** is an interactive Python tool that visualizes Fi
 
 ## Demo
 
-![Image](resources/Play.png)
+![Image](resources/Play.gif)
 
 ## Installation
 Ensure Python 3.x is installed along with the necessary dependencies.
