@@ -9,6 +9,10 @@ The **Fibonacci Wave Explorer** is an interactive Python tool that visualizes Fi
 - **Interactive UI**: Sliders allow real-time adjustments to Fibonacci iterations, frequency scaling, and wave complexity.
 - **Reset Function**: Restores default settings with user confirmation.
 
+## Demo
+
+![Image](resources/Untitled.png)
+
 ## Installation
 Ensure Python 3.x is installed along with the necessary dependencies.
 
